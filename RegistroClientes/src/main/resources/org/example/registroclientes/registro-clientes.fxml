@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.registroclientes.controller.RegistroClientesController">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" text="Registro de clientes">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="471.79998779296875" layoutX="115.0" layoutY="40.0" opacity="0.3" startX="-100.0" />
+
+      <Label layoutX="12.0" layoutY="56.0" text="Nombre:" />
+      <Label layoutX="12.0" layoutY="97.0" text="Correo:" />
+      <Label layoutX="11.0" layoutY="138.0" text="Telefono:" />
+      <Label layoutX="414.0" layoutY="56.0" text="Tipo de Cliente" />
+
+      <TextField fx:id="txtNombre" layoutX="62.0" layoutY="52.0" prefHeight="26.0" prefWidth="242.0" promptText="Ingrese el Nombre" />
+      <TextField fx:id="txtCorreo" layoutX="62.0" layoutY="93.0" prefHeight="26.0" prefWidth="242.0" promptText="Ingrese Correo (ejemplo@gmail.com)" />
+      <TextField fx:id="txtTelefono" layoutX="63.0" layoutY="134.0" prefHeight="26.0" prefWidth="242.0" promptText="Telefono (ej: 0102-0304)" />
+      <ComboBox fx:id="cmbTipoCliente" layoutX="379.0" layoutY="81.0" prefWidth="150.0" promptText="Seleccione un tipo" />
+
+      <Label layoutX="15.0" layoutY="182.0" text="Documento de identificación" />
+      <Label layoutX="15.0" layoutY="250.0" text="Directorio del cliente" />
+
+      <TextField fx:id="txtRutaDocumento" editable="false" layoutX="18.0" layoutY="212.0" prefHeight="26.0" prefWidth="286.0" promptText="Ningún archivo seleccionado" />
+      <TextField fx:id="txtRutaDirectorio" editable="false" layoutX="18.0" layoutY="283.0" prefHeight="26.0" prefWidth="286.0" promptText="Ninguna carpeta seleccionada" />
+
+      <Button fx:id="btnSeleccionarDocumento" layoutX="327.0" layoutY="213.0" mnemonicParsing="false" text="Seleccionar..." />
+      <Button fx:id="btnSeleccionarDirectorio" layoutX="327.0" layoutY="284.0" mnemonicParsing="false" text="Seleccionar..." />
+
+      <Button fx:id="btnGuardar" layoutX="21.0" layoutY="345.0" mnemonicParsing="false" style="-fx-background-color: #13A300;" text="Guardar" textFill="WHITE" />
+      <Button fx:id="btnCrearSolicitud" layoutX="108.0" layoutY="346.0" mnemonicParsing="false" text="Crear Solicitud" />
+      <Button fx:id="btnLimpiar" layoutX="231.0" layoutY="346.0" mnemonicParsing="false" text="Limpiar" />
+      <Button fx:id="btnCerrar" layoutX="320.0" layoutY="346.0" mnemonicParsing="false" style="-fx-background-color: FF4929;" text="Cerrar" textFill="WHITE" />
+   </children>
+</AnchorPane>

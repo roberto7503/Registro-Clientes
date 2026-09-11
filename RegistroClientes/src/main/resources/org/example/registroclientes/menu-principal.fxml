@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.registroclientes.controller.MenuPrincipalController">
+    <children>
+        <Label fx:id="lblBienvenida" layoutX="230.0" layoutY="180.0" text="Bienvenido">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Clientes">
+                    <items>
+                        <MenuItem fx:id="itemRegistroClientes" mnemonicParsing="false" text="Registro de Clientes" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Servicios">
+                    <items>
+                        <MenuItem fx:id="itemSolicitudServicio" mnemonicParsing="false" text="Solicitud de Servicio" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Salir">
+                    <items>
+                        <MenuItem fx:id="itemCerrarApp" mnemonicParsing="false" text="Cerrar Aplicación" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>
